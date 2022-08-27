@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson 5</title>
+</head>
+<body>
+    <script>
+        //local storage chỉ lưu trên dữ liệu ở trang khác nhau, các trang web k dùng local storage của trang khác
+        // thêm dữ liệu vào storage:
+        // localStorage.setItem("randomNumber","this is random")
+
+
+        // console.log(localStorage);
+        // // update dữ liệu trên local storage
+        // localStorage.setItem("randomNumber",100)
+        // var random = localStorage.getItem("randomNumber")
+        // console.log(random)
+        // // xóa 1 dữ liệu
+        // localStorage.removeItem("randomnumber")
+        // // xóa hết dữ liệu
+        // // localStorage.clear()
+        // ramdom = Number(random)
+        // console.log(ramdom+100)
+
+        // var arr = [1,2,3,4,5,6];
+        // console.log(arr)
+        // // localStorage.setItem("array", arr)
+        // // var arrInLs = localStorage.getItem("array")
+        // // console.log(arrInLs)
+        // localStorage.setItem("array", JSON.stringify(arr));
+        // var arrInLs = localStorage.setItem("array", arr);
+        // arrInLs = JSON.parse(arrInLs);
+        // console.log(arrInLs);
+        var hs1 = [
+        {name:"duy1", age : 14 },
+        {name:"duy2", age : 14 },
+        {name:"duy3", age : 14 },
+        {name:"duy4", age : 14 },
+        {name:"duy5", age : 14 },
+        {name:"duy6", age : 14 },
+        {name:"duy7", age : 14 },
+        {name:"duy8", age : 14 },
+        {name:"duy9", age : 14 },
+        {name:"duy10", age : 14 },]
+        localStorage.setItem("mang", JSON.stringify(hs1))
+        var doituong = localStorage.getItem("mang")
+        doituong = JSON.parse(doituong)
+        console.log(doituong)
+        
+
+    </script>
+</body>
+</html>
